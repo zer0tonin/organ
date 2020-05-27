@@ -9,7 +9,7 @@ To use Organ, simply add it as middleware in an Oak web application before your 
 
 ```javascript
 import { Application } from "https://deno.land/x/oak/mod.ts";
-import { organ } from "../mod.ts";
+import { organ } from "https://raw.githubusercontent.com/denjucks/organ/master/mod.ts";
 
 const app = new Application();
 
