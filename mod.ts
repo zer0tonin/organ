@@ -71,9 +71,8 @@ export class Logger {
     }
 
     remoteUser() : string {
-        let credentials = auth(this._request);
-        credentials = credentials ? credentials.name : "-";
-        return credentials;
+        const credentials: any = auth(this._request);
+        return credentials ? credentials.name : "-";
     }
 
     request(header: string) : string {
